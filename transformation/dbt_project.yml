@@ -1,0 +1,8 @@
+name: transformation
+version: '1.0.0'
+profile: transformation
+
+model-paths: ["models"]
+models:
+  transformation:
+    +materialized: table

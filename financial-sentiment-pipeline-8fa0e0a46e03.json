@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "financial-sentiment-pipeline",
+  "private_key_id": "8fa0e0a46e03a63c0915f0b8b3375e10345d420a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBSOnRmlfbgyp2\neUnW8bfD+buV9b1pQa9hRckhj0K9+P/Ok1P2MHxQsOv0DitPPnGaTaGptdw1/h7Y\n90d2VkP4KIxveMiDd6UK989+kUgxaKDtV8niAqp433fDG8ZsJim7jYk2R+TPuquW\nSv2JQYzxWW4q1M+Mu1UCYfIsVMWSLYas9Vkb0B/0evTR+08eT/nkIdUP2GXlpYU5\nyuqRJvEBG85rWjssbpejhRNM6DWRLG1XUDVPIQknWAWQo2KepPaYcX93FxZnBAak\nw565S5tSz5OsSCYqojffIkI8B39kSZj8sqcNqOEpwuGoARNgkJ//52fUxXCG+xES\nevqTi/ARAgMBAAECggEADKyk1H9L+pN/0dQDQQqJs9qo79z05jWN9BF47m/v/vgY\nginMDC1CwaHQXykcsu4T0fv8OV45CftXd3/DmmFuxJOYHeksMN7EHlOAsjqBoufL\nAbVLgjwNhK6Wsl8cZFQeUXOnBz2wpeSGQu048eqv/NWR8VISKBbSrLzSfhCzAfJI\nHygJ7aQS9OewKNB1HJ9mCiUvhl0D704plkRBsPOmN9aZIkz5AqyPzypsWiHp8JxZ\n4w9nnjIp/s2d2u508qcXljnTEViFLsmtYjj3cJfQoJtNqrK2Y0JO8DDDhf5JCOqn\nnIxLjcyqEEDirMbdLgFcvQO6eSE0/V/WrE+/qIOmrwKBgQDkTWYbGuOWtYsJCp+M\ntnEr3hL/ftGWdjErWd7fEzbF5BvLw2kYLDLg+YPeXlBmjdylkFHv9WoLrbJjmtll\nkKKTYmQoYis8xmjWV8AvsxO+NOW6eEAvRQjx9VwoaYa5RK6ws/7nuLF0Kd0oq+XF\nnFKFXzyZil3f6F+b4sLgoz6l2wKBgQDYu/E6oJH0cUPKgk92cyh7jAvQ24uxL0rW\naLP2c5Ui1XfOa2m3eBzT5i+UoIqFNHBss2hDpY9OMZ7r8U1+0gU7jHaFvopNpoMN\nhKkG+4pD2WIDf10sa/nS0y9Y8130MD5Vq9x1A2cgdSm5uEExTNU/RSugKZnOAEgd\n/1p1uDqDgwKBgQC5hjAobKRvz12J3mkjhwrWlCOqHluhQrDYQrL7YnjLPYBdCJI5\nw4khC4LezJPXkwawQGRldHBVxzRE/wwVHgEPdhBgRM5QGAgPzsVtvb+YfRIGgzvd\nbeNEBJh8eqyxl5/CFrNZiNwjwvVm3LHe8RaaLXdoamm4z/QKEK8+r0n0qwKBgDgr\nlVxlaw5YIIKmfSOsuswyQomxrKWSJSomXqW71OX/PxqfWfmzxnzghmpVpTDao1x4\nrsgBa3+PeqmZk0UP9000nS8Sb9OqGQLy47+sh2wINc/EPYiav1d1Zir+f9YefrlD\nXlJxPFP8KYE5kKPPTuEj8yeCQJtUFVy45l/mDDwzAoGBAJFIiumntNnU/FtWJqhd\n4ddlgzEyEH3g2lDg5ldup0IoLxJkgQZDE9V1IXr7Xe9wGNtroVNux+HCGUCsKO8P\nCcynFXnPbjJ7/NK4NJYbfM18TArhKSadeD4CuOPzS3wq6DKtvUwjeGzQEEClQ1AM\npZWyTHMp/PhwJCFkC1JfwPsl\n-----END PRIVATE KEY-----\n",
+  "client_email": "sentiment-pipeline@financial-sentiment-pipeline.iam.gserviceaccount.com",
+  "client_id": "112327362309006829288",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sentiment-pipeline%40financial-sentiment-pipeline.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,4 @@
+requests
+groq
+google-cloud-bigquery
+python-dotenv

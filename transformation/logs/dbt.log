@@ -1,0 +1,242 @@
+[0m07:25:37.714890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002506E2904D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002506DF33310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002506D3A3150>]}
+
+
+============================== 07:25:37.721852 | cf28078e-916d-46ab-ba8b-3d57ffa26aaa ==============================
+[0m07:25:37.721852 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:25:37.722877 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug --project-dir transformation', 'use_experimental_parser': 'False', 'log_path': 'transformation\\logs'}
+[0m07:25:37.754850 [info ] [MainThread]: dbt version: 1.11.11
+[0m07:25:37.757095 [info ] [MainThread]: python version: 3.11.0
+[0m07:25:37.758382 [info ] [MainThread]: python path: C:\Users\larma\OneDrive\Desktop\googleCloudprojects\financial-sentiment-pileline\venv\Scripts\python.exe
+[0m07:25:37.759377 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m07:25:39.940873 [info ] [MainThread]: Using profiles dir at C:\Users\larma\.dbt
+[0m07:25:39.943378 [info ] [MainThread]: Using profiles.yml file at C:\Users\larma\.dbt\profiles.yml
+[0m07:25:39.944567 [info ] [MainThread]: Using dbt_project.yml file at transformation\dbt_project.yml
+[0m07:25:39.946639 [info ] [MainThread]: adapter type: bigquery
+[0m07:25:39.947704 [info ] [MainThread]: adapter version: 1.11.1
+[0m07:25:40.123699 [info ] [MainThread]: Configuration:
+[0m07:25:40.124980 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:25:40.126321 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:25:40.127798 [info ] [MainThread]: Required dependencies:
+[0m07:25:40.129306 [debug] [MainThread]: Executing "git --help"
+[0m07:25:40.207964 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:25:40.209470 [debug] [MainThread]: STDERR: "b''"
+[0m07:25:40.209470 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:25:40.210608 [info ] [MainThread]: Connection:
+[0m07:25:40.211608 [info ] [MainThread]:   method: service-account
+[0m07:25:40.212619 [info ] [MainThread]:   database: financial-sentiment-pipeline
+[0m07:25:40.213631 [info ] [MainThread]:   execution_project: financial-sentiment-pipeline
+[0m07:25:40.214630 [info ] [MainThread]:   schema: sentiment_data
+[0m07:25:40.215626 [info ] [MainThread]:   location: US
+[0m07:25:40.215626 [info ] [MainThread]:   priority: None
+[0m07:25:40.217645 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m07:25:40.218839 [info ] [MainThread]:   impersonate_service_account: None
+[0m07:25:40.219344 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m07:25:40.220370 [info ] [MainThread]:   job_retries: 1
+[0m07:25:40.221375 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m07:25:40.222616 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m07:25:40.223865 [info ] [MainThread]:   timeout_seconds: None
+[0m07:25:40.225918 [info ] [MainThread]:   client_id: None
+[0m07:25:40.227141 [info ] [MainThread]:   token_uri: None
+[0m07:25:40.228147 [info ] [MainThread]:   compute_region: None
+[0m07:25:40.229656 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m07:25:40.231669 [info ] [MainThread]:   gcs_bucket: None
+[0m07:25:40.232960 [info ] [MainThread]:   dataproc_batch: None
+[0m07:25:40.235031 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:25:41.199445 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m07:25:41.200461 [debug] [MainThread]: On debug: select 1 as id
+[0m07:25:41.201457 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:25:42.712657 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=financial-sentiment-pipeline&j=bq:US:ffb3a951-094b-4d10-bb56-dff35e6072d2&page=queryresults
+[0m07:25:42.959407 [debug] [MainThread]: SQL status: OK in 0.246 seconds
+[0m07:25:43.420430 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:25:43.422429 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:25:43.426417 [debug] [MainThread]: Command `dbt debug` succeeded at 07:25:43.425421 after 5.88 seconds
+[0m07:25:43.427416 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:25:43.429409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025067488A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025067489BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250676ABC90>]}
+[0m07:25:43.430915 [debug] [MainThread]: Flushing usage events
+[0m07:25:43.869721 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:27:47.968759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3C16C6810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3C16FF510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3C16FD3D0>]}
+
+
+============================== 07:27:47.974255 | 3cf639a3-4343-4876-b520-dd6372a72df3 ==============================
+[0m07:27:47.974255 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:27:47.975252 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run --project-dir transformation', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'transformation\\logs'}
+[0m07:27:49.417792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3DABFD090>]}
+[0m07:27:49.492628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3BCD91A90>]}
+[0m07:27:49.494878 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:27:50.260226 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m07:27:50.262226 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:27:50.263223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3D8410910>]}
+[0m07:27:52.097327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3DAFCF710>]}
+[0m07:27:52.192487 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m07:27:52.196546 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m07:27:52.215973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3DAEAF690>]}
+[0m07:27:52.216990 [info ] [MainThread]: Found 1 model, 549 macros
+[0m07:27:52.217986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cf639a3-4343-4876-b520-dd6372a72df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3DB0E8C50>]}
+[0m07:27:52.221516 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:27:52.222846 [debug] [MainThread]: Command end result
+[0m07:27:52.269548 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m07:27:52.272813 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m07:27:52.278148 [debug] [MainThread]: Wrote artifact RunExecutionResult to transformation\target\run_results.json
+[0m07:27:52.279655 [debug] [MainThread]: Command `dbt run` succeeded at 07:27:52.279655 after 4.44 seconds
+[0m07:27:52.280665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3B9A6BC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3DAB9C1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3B9848A10>]}
+[0m07:27:52.281664 [debug] [MainThread]: Flushing usage events
+[0m07:27:52.663972 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:28:51.142347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD3A0DF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD3A0DD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD3943FD0>]}
+
+
+============================== 07:28:51.149144 | 1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0 ==============================
+[0m07:28:51.149144 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:28:51.151571 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'invocation_command': 'dbt run --project-dir transformation --models sentiment_summary', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'transformation\\logs'}
+[0m07:28:51.152568 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m07:28:51.153565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD3A0D2D0>]}
+[0m07:28:52.663699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD39DBBD0>]}
+[0m07:28:52.744934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD0061A10>]}
+[0m07:28:52.745938 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:28:53.710273 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m07:28:53.895041 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:28:53.896175 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m07:28:53.897648 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:28:53.984023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCEE331710>]}
+[0m07:28:54.174725 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m07:28:54.181590 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m07:28:54.200936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCEE20F110>]}
+[0m07:28:54.202123 [info ] [MainThread]: Found 1 model, 549 macros
+[0m07:28:54.204155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1c9d8f9c-415a-4b8c-ae95-c13551c1a8a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCEDD827D0>]}
+[0m07:28:54.206544 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m07:28:54.210648 [debug] [MainThread]: Command end result
+[0m07:28:54.290697 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m07:28:54.296290 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m07:28:54.303536 [debug] [MainThread]: Wrote artifact RunExecutionResult to transformation\target\run_results.json
+[0m07:28:54.304533 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m07:28:54.307268 [debug] [MainThread]: Command `dbt run` succeeded at 07:28:54.307268 after 3.32 seconds
+[0m07:28:54.308267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCCB79BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCCB78A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCD393FC90>]}
+[0m07:28:54.309263 [debug] [MainThread]: Flushing usage events
+[0m07:28:54.687713 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:09:43.983393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3BC603C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3BE8E4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3C0F69BD0>]}
+
+
+============================== 08:09:43.989112 | a0f3f391-4d7d-476b-91c2-7cbf526b0075 ==============================
+[0m08:09:43.989112 [info ] [MainThread]: Running with dbt=1.11.11
+[0m08:09:43.990198 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'invocation_command': 'dbt run --project-dir transformation --select sentiment_summary', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'transformation\\logs'}
+[0m08:09:46.094109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0f3f391-4d7d-476b-91c2-7cbf526b0075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3DA409B50>]}
+[0m08:09:46.178770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0f3f391-4d7d-476b-91c2-7cbf526b0075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3BC631D50>]}
+[0m08:09:46.180780 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m08:09:46.988462 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m08:09:47.256778 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:09:47.256778 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m08:09:47.258006 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:09:47.292384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0f3f391-4d7d-476b-91c2-7cbf526b0075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3DA371D90>]}
+[0m08:09:47.500454 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m08:09:47.509430 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m08:09:47.546332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0f3f391-4d7d-476b-91c2-7cbf526b0075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3DA7CFB10>]}
+[0m08:09:47.548328 [info ] [MainThread]: Found 1 model, 549 macros
+[0m08:09:47.550320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0f3f391-4d7d-476b-91c2-7cbf526b0075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3DA3EDC90>]}
+[0m08:09:47.554313 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m08:09:47.560298 [debug] [MainThread]: Command end result
+[0m08:09:47.707168 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m08:09:47.716144 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m08:09:47.730106 [debug] [MainThread]: Wrote artifact RunExecutionResult to transformation\target\run_results.json
+[0m08:09:47.734096 [debug] [MainThread]: Command `dbt run` succeeded at 08:09:47.733098 after 3.86 seconds
+[0m08:09:47.737088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3C0FAB7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3C0FA8C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3B9119BD0>]}
+[0m08:09:47.740079 [debug] [MainThread]: Flushing usage events
+[0m08:09:48.105372 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:10:03.627135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C0A02CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C439A7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C43CD190>]}
+
+
+============================== 08:10:03.633518 | 1b0d2108-5a69-4089-ac81-ef1862ca25a4 ==============================
+[0m08:10:03.633518 [info ] [MainThread]: Running with dbt=1.11.11
+[0m08:10:03.635631 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir transformation --select sentiment_summary', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'transformation\\logs'}
+[0m08:10:05.224308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C53ABBD0>]}
+[0m08:10:05.328895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C0A31C90>]}
+[0m08:10:05.331222 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m08:10:06.225718 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m08:10:06.428582 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:10:06.429636 [debug] [MainThread]: Partial parsing: updated file: transformation://models\sentiment_summary.sql
+[0m08:10:06.791502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207DEBFDF10>]}
+[0m08:10:06.927217 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m08:10:06.935342 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m08:10:06.956231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207DE82F6D0>]}
+[0m08:10:06.958717 [info ] [MainThread]: Found 1 model, 549 macros
+[0m08:10:06.960106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207DF023C10>]}
+[0m08:10:06.963204 [info ] [MainThread]: 
+[0m08:10:06.964202 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:10:06.965199 [info ] [MainThread]: 
+[0m08:10:06.967612 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:10:06.970605 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_financial-sentiment-pipeline'
+[0m08:10:06.972599 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:10:07.882583 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_financial-sentiment-pipeline_sentiment_data'
+[0m08:10:07.886089 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:10:08.683905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207DEC34890>]}
+[0m08:10:08.685407 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:10:08.773892 [debug] [Thread-1 (]: Began running node model.transformation.sentiment_summary
+[0m08:10:08.776882 [info ] [Thread-1 (]: 1 of 1 START sql table model sentiment_data.sentiment_summary .................. [RUN]
+[0m08:10:08.779874 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.transformation.sentiment_summary'
+[0m08:10:08.782868 [debug] [Thread-1 (]: Began compiling node model.transformation.sentiment_summary
+[0m08:10:08.800330 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformation.sentiment_summary"
+[0m08:10:08.805316 [debug] [Thread-1 (]: Began executing node model.transformation.sentiment_summary
+[0m08:10:08.945655 [debug] [Thread-1 (]: Writing runtime sql for node "model.transformation.sentiment_summary"
+[0m08:10:08.952630 [debug] [Thread-1 (]: On model.transformation.sentiment_summary: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "transformation", "target_name": "dev", "node_id": "model.transformation.sentiment_summary"} */
+
+  
+    
+
+    create or replace table `financial-sentiment-pipeline`.`sentiment_data`.`sentiment_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- summarize sentiment by ticker and date
+SELECT
+    ticker,
+    DATE(ingested_at) as date,
+    COUNT(*) as total_articles,
+    COUNTIF(sentiment = 'positive') as positive_count,
+    COUNTIF(sentiment = 'negative') as negative_count,
+    COUNTIF(sentiment = 'neutral') as neutral_count,
+    ROUND(COUNTIF(sentiment = 'positive') / COUNT(*) * 100, 2) as positive_pct
+FROM
+    `financial-sentiment-pipeline.sentiment_data.raw_sentiment`
+GROUP BY
+    ticker, date
+ORDER BY
+    date DESC, total_articles DESC
+    );
+  
+[0m08:10:08.953626 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:10:09.801598 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=financial-sentiment-pipeline&j=bq:US:3ec129db-f90d-4968-b37b-78bbab36a2b4&page=queryresults
+[0m08:10:11.582338 [debug] [Thread-1 (]: SQL status: OK in 1.778 seconds
+[0m08:10:12.235398 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1b0d2108-5a69-4089-ac81-ef1862ca25a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207DEB96C10>]}
+[0m08:10:12.236395 [info ] [Thread-1 (]: 1 of 1 OK created sql table model sentiment_data.sentiment_summary ............. [[32mCREATE TABLE (5.0 rows, 1.1 KiB processed)[0m in 3.45s]
+[0m08:10:12.238390 [debug] [Thread-1 (]: Finished running node model.transformation.sentiment_summary
+[0m08:10:12.239671 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m08:10:12.324767 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:10:12.327759 [debug] [MainThread]: Connection 'list_financial-sentiment-pipeline' was properly closed.
+[0m08:10:12.337732 [debug] [MainThread]: Connection 'list_financial-sentiment-pipeline_sentiment_data' was properly closed.
+[0m08:10:12.338776 [debug] [MainThread]: Connection 'model.transformation.sentiment_summary' was properly closed.
+[0m08:10:12.340041 [info ] [MainThread]: 
+[0m08:10:12.341045 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.37 seconds (5.37s).
+[0m08:10:12.343042 [debug] [MainThread]: Command end result
+[0m08:10:12.479104 [debug] [MainThread]: Wrote artifact WritableManifest to transformation\target\manifest.json
+[0m08:10:12.483375 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation\target\semantic_manifest.json
+[0m08:10:12.491121 [debug] [MainThread]: Wrote artifact RunExecutionResult to transformation\target\run_results.json
+[0m08:10:12.492332 [info ] [MainThread]: 
+[0m08:10:12.493388 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:10:12.493388 [info ] [MainThread]: 
+[0m08:10:12.494554 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m08:10:12.496573 [debug] [MainThread]: Command `dbt run` succeeded at 08:10:12.496573 after 9.01 seconds
+[0m08:10:12.497612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207C4093910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207BD598A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207BD599BD0>]}
+[0m08:10:12.498609 [debug] [MainThread]: Flushing usage events
+[0m08:10:12.663076 [debug] [MainThread]: An error was encountered while trying to flush usage events

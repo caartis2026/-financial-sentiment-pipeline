@@ -1,0 +1,50 @@
+[0m06:57:40.297735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247E13F7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247E24EFF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247E24EF9D0>]}
+
+
+============================== 06:57:40.306947 | 1db28eec-7c2d-4d77-9eb3-ab8950fff696 ==============================
+[0m06:57:40.306947 [info ] [MainThread]: Running with dbt=1.11.11
+[0m06:57:40.307944 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'invocation_command': 'dbt init transformation', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m06:57:40.347359 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\larma\.dbt
+[0m06:57:40.351854 [info ] [MainThread]: A project called transformation already exists here.
+[0m06:57:40.354195 [debug] [MainThread]: Command `dbt init` succeeded at 06:57:40.354195 after 0.20 seconds
+[0m06:57:40.355192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247DA98EF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247E124D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247E247F690>]}
+[0m06:57:40.356190 [debug] [MainThread]: Flushing usage events
+[0m06:57:40.848369 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:59:29.940513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC46DC5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC46D70990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC45CF16D0>]}
+
+
+============================== 06:59:29.946498 | bdad877d-5ac0-4b3d-bc8d-8c2bd87945b2 ==============================
+[0m06:59:29.946498 [info ] [MainThread]: Running with dbt=1.11.11
+[0m06:59:29.947495 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\larma\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug --project-dir transformation', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m06:59:29.969437 [info ] [MainThread]: dbt version: 1.11.11
+[0m06:59:29.970435 [info ] [MainThread]: python version: 3.11.0
+[0m06:59:29.971433 [info ] [MainThread]: python path: C:\Users\larma\OneDrive\Desktop\googleCloudprojects\financial-sentiment-pileline\venv\Scripts\python.exe
+[0m06:59:29.972435 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m06:59:29.973428 [info ] [MainThread]: Using profiles dir at C:\Users\larma\.dbt
+[0m06:59:29.974443 [info ] [MainThread]: Using profiles.yml file at C:\Users\larma\.dbt\profiles.yml
+[0m06:59:29.974443 [info ] [MainThread]: Using dbt_project.yml file at transformation\dbt_project.yml
+[0m06:59:29.975892 [info ] [MainThread]: Configuration:
+[0m06:59:29.977026 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m06:59:29.978029 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m06:59:29.979079 [info ] [MainThread]: Required dependencies:
+[0m06:59:29.980089 [debug] [MainThread]: Executing "git --help"
+[0m06:59:30.049274 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m06:59:30.049274 [debug] [MainThread]: STDERR: "b''"
+[0m06:59:30.050330 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m06:59:30.051498 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m06:59:30.051498 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m06:59:30.052562 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\larma\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m06:59:30.053628 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <transformation\dbt_project.yml> not found
+
+[0m06:59:30.054749 [debug] [MainThread]: Command `dbt debug` failed at 06:59:30.054749 after 0.24 seconds
+[0m06:59:30.055764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC46D6FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC46D6F9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC46D70390>]}
+[0m06:59:30.057060 [debug] [MainThread]: Flushing usage events
+[0m06:59:30.362664 [debug] [MainThread]: An error was encountered while trying to flush usage events
